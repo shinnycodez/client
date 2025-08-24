@@ -77,15 +77,45 @@
         <div class="container mx-auto px-4 flex justify-between items-center">
             <div class="text-2xl font-bold text-[#004b6e]">Your Company Logo</div>
             <!-- Desktop Navigation -->
-            <nav class="hidden md:flex space-x-6 items-center">
-                <a href="index.html#home" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Home</a>
-                <a href="about us.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">About</a>
-                <a href="gallery.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Gallery</a>
-                <a href="courses.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Courses</a>
-                <a href="trainers.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Trainers</a>
-                <a href="workshops.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Workshops</a>
-                <a href="contact us.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Contact</a>
-            </nav>
+<nav class="hidden md:flex space-x-6 items-center">
+  <!-- Home -->
+  <a href="index.html#home" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Home</a>
+
+  <!-- About Us -->
+  <a href="about us.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">About Us</a>
+
+  <!-- Programs (Dropdown with Click) -->
+  <div class="relative">
+    <button id="programs-btn" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300 flex items-center">
+      Programs
+      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+    <!-- Dropdown menu -->
+    <div id="programs-menu" class="absolute hidden bg-white shadow-lg rounded-lg mt-2 py-2 w-48">
+      <a href="workshops.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Workshops</a>
+      <a href="in-house.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">In-house</a>
+      <a href="virtual.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Virtual</a>
+      <a href="open-enrollment.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Open Enrollment</a>
+    </div>
+  </div>
+
+  <!-- Trainers -->
+  <a href="trainers.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Trainers</a>
+
+  <!-- Certificates -->
+  <a href="certificates.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Certificates</a>
+
+  <!-- Calendar -->
+  <a href="calendar.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Calendar</a>
+
+  <!-- Blog -->
+  <a href="blog.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Blog</a>
+
+  <!-- Contact Us -->
+  <a href="contact us.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Contact Us</a>
+</nav>
             <a href="gallery.html" class="hidden md:block bg-[#004b6e] text-white px-5 py-2 rounded-lg shadow-md hover:bg-blue-800 transition duration-300 text-sm font-semibold">GALLERY</a>
             <!-- Mobile Menu Button -->
             <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
@@ -101,6 +131,10 @@
             <a href="trainers.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Trainers</a>
             <a href="workshops.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Workshops</a>
             <a href="contact us.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Contact</a>
+            <a href="In house.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">In house</a>
+            <a href="Open-enrollment.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Open enrollment</a>
+            <a href="Certificates.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Certificates</a>
+            <a href="Calendar.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Calendar</a>  
             <a href="gallery.html" class="block text-center bg-[#004b6e] text-white px-5 py-2 rounded-lg shadow-md hover:bg-blue-800 transition duration-300 text-sm font-semibold mt-4">GALLERY</a>
         </nav>
     </header>
@@ -123,7 +157,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 <!-- Gallery Item 1 -->
                 <div class="gallery-item rounded-xl overflow-hidden shadow-lg group hover:shadow-xl hover:scale-[1.03] hover:ring-4 hover:ring-[#004b6e] transition duration-300 transform animate-on-scroll">
-                    <img src="https://placehold.co/600x400/A7D9F7/004b6e?text=Workshop+1" alt="Workshop in progress" class="w-full h-48 object-cover transition duration-300 group-hover:scale-105">
+                    <img src="https://i.pinimg.com/736x/9c/60/f8/9c60f82ce3f1832b72c395957750dba2.jpg" alt="Workshop in progress" class="w-full h-48 object-cover transition duration-300 group-hover:scale-105">
                     <div class="p-4">
                         <h3 class="text-lg font-semibold text-[#004b6e]">Interactive Workshop</h3>
                         <p class="text-sm text-gray-600">Engaging with participants during a leadership training.</p>
@@ -131,7 +165,7 @@
                 </div>
                 <!-- Gallery Item 2 -->
                 <div class="gallery-item rounded-xl overflow-hidden shadow-lg group hover:shadow-xl hover:scale-[1.03] hover:ring-4 hover:ring-[#004b6e] transition duration-300 transform animate-on-scroll">
-                    <img src="https://placehold.co/600x400/D1E0F0/1E40AF?text=Coaching+Session" alt="One-on-one coaching session" class="w-full h-48 object-cover transition duration-300 group-hover:scale-105">
+                    <img src="https://i.pinimg.com/1200x/70/54/0e/70540eae520126d2bcef568dfe2b515d.jpg" alt="One-on-one coaching session" class="w-full h-48 object-cover transition duration-300 group-hover:scale-105">
                     <div class="p-4">
                         <h3 class="text-lg font-semibold text-[#004b6e]">Personal Coaching</h3>
                         <p class="text-sm text-gray-600">A focused one-on-one coaching session.</p>
@@ -139,7 +173,7 @@
                 </div>
                 <!-- Gallery Item 3 -->
                 <div class="gallery-item rounded-xl overflow-hidden shadow-lg group hover:shadow-xl hover:scale-[1.03] hover:ring-4 hover:ring-[#004b6e] transition duration-300 transform animate-on-scroll">
-                    <img src="https://placehold.co/600x400/A7D9F7/004b6e?text=Team+Building" alt="Team building activity" class="w-full h-48 object-cover transition duration-300 group-hover:scale-105">
+                    <img src="https://i.pinimg.com/736x/7d/e6/51/7de651085657355bda59c2754bbe8996.jpg" alt="Team building activity" class="w-full h-48 object-cover transition duration-300 group-hover:scale-105">
                     <div class="p-4">
                         <h3 class="text-lg font-semibold text-[#004b6e]">Team Collaboration</h3>
                         <p class="text-sm text-gray-600">Teams working together on a collaborative exercise.</p>
@@ -147,7 +181,7 @@
                 </div>
                 <!-- Gallery Item 4 -->
                 <div class="gallery-item rounded-xl overflow-hidden shadow-lg group hover:shadow-xl hover:scale-[1.03] hover:ring-4 hover:ring-[#004b6e] transition duration-300 transform animate-on-scroll">
-                    <img src="https://placehold.co/600x400/E0F2F7/2C5282?text=Seminar+Audience" alt="Audience at a seminar" class="w-full h-48 object-cover transition duration-300 group-hover:scale-105">
+                    <img src="https://i.pinimg.com/736x/80/22/50/8022506379cd94c43b22225c71344f76.jpg" alt="Audience at a seminar" class="w-full h-48 object-cover transition duration-300 group-hover:scale-105">
                     <div class="p-4">
                         <h3 class="text-lg font-semibold text-[#004b6e]">Inspiring Seminars</h3>
                         <p class="text-sm text-gray-600">Attendees at one of our large-scale seminars.</p>
@@ -155,36 +189,13 @@
                 </div>
                 <!-- Gallery Item 5 -->
                 <div class="gallery-item rounded-xl overflow-hidden shadow-lg group hover:shadow-xl hover:scale-[1.03] hover:ring-4 hover:ring-[#004b6e] transition duration-300 transform animate-on-scroll">
-                    <img src="https://placehold.co/600x400/D1E0F0/1E40AF?text=Consulting+Meeting" alt="Consulting meeting" class="w-full h-48 object-cover transition duration-300 group-hover:scale-105">
+                    <img src="https://i.pinimg.com/736x/c9/22/3d/c9223d80794fdc815dfeebc4511bac1f.jpg" alt="Consulting meeting" class="w-full h-48 object-cover transition duration-300 group-hover:scale-105">
                     <div class="p-4">
                         <h3 class="text-lg font-semibold text-[#004b6e]">Strategic Consulting</h3>
                         <p class="text-sm text-gray-600">Client and consultant in a strategic planning meeting.</p>
                     </div>
                 </div>
-                <!-- Gallery Item 6 -->
-                <div class="gallery-item rounded-xl overflow-hidden shadow-lg group hover:shadow-xl hover:scale-[1.03] hover:ring-4 hover:ring-[#004b6e] transition duration-300 transform animate-on-scroll">
-                    <img src="https://placehold.co/600x400/A7D9F7/004b6e?text=Certification+Ceremony" alt="Certification ceremony" class="w-full h-48 object-cover transition duration-300 group-hover:scale-105">
-                    <div class="p-4">
-                        <h3 class="text-lg font-semibold text-[#004b6e]">Certification Success</h3>
-                        <p class="text-sm text-gray-600">Celebrating the achievement of our certified coaches.</p>
-                    </div>
-                </div>
-                <!-- Gallery Item 7 -->
-                <div class="gallery-item rounded-xl overflow-hidden shadow-lg group hover:shadow-xl hover:scale-[1.03] hover:ring-4 hover:ring-[#004b6e] transition duration-300 transform animate-on-scroll">
-                    <img src="https://placehold.co/600x400/E0F2F7/2C5282?text=Outdoor+Activity" alt="Outdoor team activity" class="w-full h-48 object-cover transition duration-300 group-hover:scale-105">
-                    <div class="p-4">
-                        <h3 class="text-lg font-semibold text-[#004b6e]">Outdoor Team Building</h3>
-                        <p class="text-sm text-gray-600">Fun and engaging outdoor team building exercises.</p>
-                    </div>
-                </div>
-                <!-- Gallery Item 8 -->
-                <div class="gallery-item rounded-xl overflow-hidden shadow-lg group hover:shadow-xl hover:scale-[1.03] hover:ring-4 hover:ring-[#004b6e] transition duration-300 transform animate-on-scroll">
-                    <img src="https://placehold.co/600x400/D1E0F0/1E40AF?text=Group+Discussion" alt="Group discussion" class="w-full h-48 object-cover transition duration-300 group-hover:scale-105">
-                    <div class="p-4">
-                        <h3 class="text-lg font-semibold text-[#004b6e]">Dynamic Discussions</h3>
-                        <p class="text-sm text-gray-600">Participants engaged in a lively group discussion.</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -342,6 +353,19 @@
 </footer>
 
     <script>
+        const btn = document.getElementById('programs-btn');
+  const menu = document.getElementById('programs-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+
+  // Close if clicking outside
+  window.addEventListener('click', (e) => {
+    if (!btn.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.add('hidden');
+    }
+  });
         document.addEventListener('DOMContentLoaded', function() {
             // Mobile Menu Toggle
             const mobileMenuButton = document.getElementById('mobile-menu-button');
