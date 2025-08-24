@@ -79,15 +79,45 @@
         <div class="container mx-auto px-4 flex justify-between items-center">
             <div class="text-2xl font-bold text-[#004b6e]">Your Company Logo</div>
             <!-- Desktop Navigation -->
-            <nav class="hidden md:flex space-x-6 items-center">
-                <a href="index.html#home" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Home</a>
-                <a href="about us.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">About</a>
-                <a href="gallery.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Gallery</a>
-                <a href="courses.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Courses</a>
-                <a href="trainers.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Trainers</a>
-                <a href="workshops.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Workshops</a>
-                <a href="contact us.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Contact</a>
-            </nav>
+<nav class="hidden md:flex space-x-6 items-center">
+  <!-- Home -->
+  <a href="index.html#home" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Home</a>
+
+  <!-- About Us -->
+  <a href="about us.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">About Us</a>
+
+  <!-- Programs (Dropdown with Click) -->
+  <div class="relative">
+    <button id="programs-btn" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300 flex items-center">
+      Programs
+      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+    <!-- Dropdown menu -->
+    <div id="programs-menu" class="absolute hidden bg-white shadow-lg rounded-lg mt-2 py-2 w-48">
+      <a href="workshops.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Workshops</a>
+      <a href="in-house.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">In-house</a>
+      <a href="virtual.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Virtual</a>
+      <a href="open-enrollment.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Open Enrollment</a>
+    </div>
+  </div>
+
+  <!-- Trainers -->
+  <a href="trainers.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Trainers</a>
+
+  <!-- Certificates -->
+  <a href="certificates.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Certificates</a>
+
+  <!-- Calendar -->
+  <a href="calendar.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Calendar</a>
+
+  <!-- Blog -->
+  <a href="blog.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Blog</a>
+
+  <!-- Contact Us -->
+  <a href="contact us.html" class="text-gray-700 hover:text-[#004b6e] font-medium transition duration-300">Contact Us</a>
+</nav>
             <a href="gallery.html" class="hidden md:block bg-[#004b6e] text-white px-5 py-2 rounded-lg shadow-md hover:bg-blue-800 transition duration-300 text-sm font-semibold">GALLERY</a>
             <!-- Mobile Menu Button -->
             <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
@@ -103,6 +133,10 @@
             <a href="trainers.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Trainers</a>
             <a href="workshops.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Workshops</a>
             <a href="contact us.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Contact</a>
+                        <a href="In house.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">In house</a>
+            <a href="Open-enrollment.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Open enrollment</a>
+            <a href="Certificates.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Certificates</a>
+            <a href="Calendar.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Calendar</a>  
             <a href="gallery.html" class="block text-center bg-[#004b6e] text-white px-5 py-2 rounded-lg shadow-md hover:bg-blue-800 transition duration-300 text-sm font-semibold mt-4">GALLERY</a>
         </nav>
     </header>
@@ -121,7 +155,7 @@
             </div>
             <!-- Right Side (40% width) -->
             <div class="md:w-2/5 flex justify-center md:justify-end animate-on-scroll">
-                <img src="https://placehold.co/450x600/E0F2F7/2C5282?text=Workshop+in+Action" alt="Workshop or seminar in action" class="rounded-xl shadow-2xl w-full max-w-md h-auto object-cover">
+                <img src="https://i.pinimg.com/736x/5b/ae/e5/5baee55ca6d0446b4eb362c6cabe2039.jpg" alt="Workshop or seminar in action" class="rounded-xl shadow-2xl w-full max-w-md h-auto object-cover">
             </div>
         </div>
     </section>
@@ -130,7 +164,7 @@
     <section id="about" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2 flex justify-center animate-on-scroll">
-                <img src="https://placehold.co/400x400/D1E0F0/1E40AF?text=Compass+Symbol" alt="Compass symbolizing navigation" class="rounded-full shadow-lg w-full max-w-xs md:max-w-sm h-auto object-cover">
+                <img src="https://i.pinimg.com/736x/87/b6/18/87b618dc3b6387f81b0f9c800495e197.jpg" alt="Compass symbolizing navigation" class="rounded-full shadow-lg w-full max-w-xs md:max-w-sm h-auto object-cover">
             </div>
             <div class="md:w-1/2 text-center md:text-left animate-on-scroll">
                 <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-[#004b6e]">Extraordinary Transformations</h2>
@@ -149,7 +183,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
                 <!-- Training Card 1 -->
                 <div class="relative h-64 rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition duration-300 transform hover:-translate-y-1 animate-on-scroll">
-                    <img src="https://placehold.co/400x300/A7D9F7/004b6e?text=SLEEP+RETREAT" alt="Sleep Retreat" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                    <img src="https://i.pinimg.com/736x/4a/1a/36/4a1a3673a64269926efccc0e1b863fe5.jpg" alt="Sleep Retreat" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
                     <div class="absolute inset-0 card-overlay flex flex-col justify-end p-6 text-white">
                         <h3 class="text-xl font-semibold mb-2">SLEEP RETREAT</h3>
                         <p class="text-sm">Rejuvenate your mind and body through guided sleep techniques.</p>
@@ -157,7 +191,7 @@
                 </div>
                 <!-- Training Card 2 -->
                 <div class="relative h-64 rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition duration-300 transform hover:-translate-y-1 animate-on-scroll" style="transition-delay: 0.1s;">
-                    <img src="https://placehold.co/400x300/A7D9F7/004b6e?text=LEADERSHIP+DEV" alt="Leadership Development" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                    <img src="https://i.pinimg.com/736x/a8/92/f7/a892f7c3c89c26a2d4a1c06dca712d98.jpg" alt="Leadership Development" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
                     <div class="absolute inset-0 card-overlay flex flex-col justify-end p-6 text-white">
                         <h3 class="text-xl font-semibold mb-2">LEADERSHIP DEVELOPMENT</h3>
                         <p class="text-sm">Empower your leaders with essential skills for success.</p>
@@ -165,7 +199,7 @@
                 </div>
                 <!-- Training Card 3 -->
                 <div class="relative h-64 rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition duration-300 transform hover:-translate-y-1 animate-on-scroll" style="transition-delay: 0.2s;">
-                    <img src="https://placehold.co/400x300/A7D9F7/004b6e?text=TEAM+BUILDING" alt="Team Building" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                    <img src="https://i.pinimg.com/1200x/55/07/e9/5507e9fb9f7d3ae87c1d841abe1d0921.jpg" alt="Team Building" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
                     <div class="absolute inset-0 card-overlay flex flex-col justify-end p-6 text-white">
                         <h3 class="text-xl font-semibold mb-2">TEAM BUILDING</h3>
                         <p class="text-sm">Strengthen team cohesion and collaborative spirit.</p>
@@ -173,7 +207,7 @@
                 </div>
                 <!-- Training Card 4 -->
                 <div class="relative h-64 rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition duration-300 transform hover:-translate-y-1 animate-on-scroll" style="transition-delay: 0.3s;">
-                    <img src="https://placehold.co/400x300/A7D9F7/004b6e?text=COMMUNICATION+SKILLS" alt="Communication Skills" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                    <img src="https://i.pinimg.com/736x/a6/0d/89/a60d896f649b9f65da947a7e97a4e67b.jpg" alt="Communication Skills" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
                     <div class="absolute inset-0 card-overlay flex flex-col justify-end p-6 text-white">
                         <h3 class="text-xl font-semibold mb-2">COMMUNICATION SKILLS</h3>
                         <p class="text-sm">Master effective communication for personal and professional growth.</p>
@@ -181,7 +215,7 @@
                 </div>
                 <!-- Training Card 5 -->
                 <div class="relative h-64 rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition duration-300 transform hover:-translate-y-1 animate-on-scroll" style="transition-delay: 0.4s;">
-                    <img src="https://placehold.co/400x300/A7D9F7/004b6e?text=STRESS+MANAGEMENT" alt="Stress Management" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                    <img src="https://i.pinimg.com/736x/15/30/3d/15303db09e01eef47d93232e29248d7e.jpg" alt="Stress Management" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
                     <div class="absolute inset-0 card-overlay flex flex-col justify-end p-6 text-white">
                         <h3 class="text-xl font-semibold mb-2">STRESS MANAGEMENT</h3>
                         <p class="text-sm">Learn techniques to manage stress and enhance well-being.</p>
@@ -440,7 +474,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Blog Card 1 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1 animate-on-scroll">
-                    <img src="https://placehold.co/600x350/E0F2F7/2C5282?text=Blog+Image+1" alt="Blog Thumbnail" class="w-full h-48 object-cover">
+                    <img src="https://i.pinimg.com/1200x/12/f7/91/12f7917343c652485829ba8910bb7b0f.jpg" alt="Blog Thumbnail" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 text-[#004b6e]">Unlocking Your Leadership Potential</h3>
                         <p class="text-gray-700 text-sm mb-4 line-clamp-2">Explore key strategies and insights to cultivate effective leadership skills in today's dynamic environment.</p>
@@ -453,7 +487,7 @@
                 </div>
                 <!-- Blog Card 2 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1 animate-on-scroll" style="transition-delay: 0.1s;">
-                    <img src="https://placehold.co/600x350/E0F2F7/2C5282?text=Blog+Image+2" alt="Blog Thumbnail" class="w-full h-48 object-cover">
+                    <img src="https://i.pinimg.com/1200x/ef/fb/7e/effb7e618f61961308fa86f2ca0a0a4f.jpg" alt="Blog Thumbnail" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 text-[#004b6e]">The Power of Mindful Coaching</h3>
                         <p class="text-gray-700 text-sm mb-4 line-clamp-2">Discover how integrating mindfulness into coaching can lead to deeper insights and more profound personal growth.</p>
@@ -466,7 +500,7 @@
                 </div>
                 <!-- Blog Card 3 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1 animate-on-scroll" style="transition-delay: 0.2s;">
-                    <img src="https://placehold.co/600x350/E0F2F7/2C5282?text=Blog+Image+3" alt="Blog Thumbnail" class="w-full h-48 object-cover">
+                    <img src="https://i.pinimg.com/1200x/85/c5/14/85c51449877dbd24c2790b28ed251551.jpg" alt="Blog Thumbnail" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 text-[#004b6e]">Navigating Organizational Change</h3>
                         <p class="text-gray-700 text-sm mb-4 line-clamp-2">Learn effective strategies for managing transitions and fostering resilience within your organization.</p>
@@ -635,6 +669,19 @@
     </a>
 
     <script>
+        const btn = document.getElementById('programs-btn');
+  const menu = document.getElementById('programs-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+
+  // Close if clicking outside
+  window.addEventListener('click', (e) => {
+    if (!btn.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.add('hidden');
+    }
+  });
         document.addEventListener('DOMContentLoaded', function() {
             // Mobile Menu Toggle
             const mobileMenuButton = document.getElementById('mobile-menu-button');
